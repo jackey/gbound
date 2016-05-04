@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # MEAN Stack Single Page Application Starter
 
 This is a repo for a starter appliation for a Single Page MEAN Stack application. Just download and install and you have a good foundation for building application. 
@@ -22,4 +21,3 @@ If you have any questions or requests, email us at [chris@scotch.io](mailto:chri
 =======
 # gbound
 GoldenBund
->>>>>>> 3eaacb93d43afa6c04ee1c2fd7103429e14ba533
