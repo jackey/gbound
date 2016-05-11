@@ -1,5 +1,10 @@
-angular.module('MainCtrl', []).controller('MainController', function($scope) {
+angular.module('MainCtrl', []).controller('MainController', function($scope, $window) {
 
-	$scope.tagline = 'To the moon and back!';	
+	$scope.bannerImageContainerInit = function ($event) {
+		var radio = 1500 / 570;
+		var maxWidth = $window.innerWidth;
+		var maxHeight = maxWidth / radio;
+		//var element = $event.currentTarget;
+	}
 
 });
