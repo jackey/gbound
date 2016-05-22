@@ -4,6 +4,12 @@ body {
 	font-family: "MicrosoftYaHei";
 }
 
+.body {
+    max-width: 1400px;
+    margin: 0 auto;
+    min-width: 1200px;
+}
+
 .font-eng {
 	font-family: "dinpro-light";
 }
@@ -12,10 +18,13 @@ b {
 	font-weight: normal;
 }
 
+#nav-bar {
+    border-top: 10px solid #c49d62;
+}
+
 #nav-bar .wrapper{
 	height: 120px;
 	width: 100%;
-	border-top: 10px solid #c49d62;
 	position: relative;
 }
 
@@ -39,7 +48,7 @@ b {
     min-width: 75px;
     text-align: center;
     list-style-type: none;
-    margin-right: 60px;
+    margin-right: 45px;
     margin-top: 65px;
 }
 
@@ -85,7 +94,7 @@ b {
     position: absolute;
     left: 50%;
     margin-left: -140px;
-    bottom: 50px;
+    bottom: 72px;
     border: 2px solid #fff;
     text-align: center;
     color: #fff;
@@ -112,7 +121,7 @@ b {
     text-align: center;
     color: #fff;
     font-size: 37px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 ul {
@@ -184,7 +193,7 @@ ul {
 
 .money-group {
     float: left;
-    width: 257px;
+    width: 229px;
     margin: 75px 20px 0px 23px;
     position: relative;
 }
@@ -332,7 +341,14 @@ a.color4:hover {
 	margin-bottom: 17px;
 }
 
+.slider-directive {
+    position: relative;
+}
 
+.slider-directive img {
+    position: absolute;
+    top: 0px;
+}
 
 
 
