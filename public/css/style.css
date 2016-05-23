@@ -18,6 +18,10 @@ b {
 	font-weight: normal;
 }
 
+.mshow {
+    display: none;
+}
+
 #nav-bar {
     border-top: 10px solid #c49d62;
 }
@@ -35,6 +39,17 @@ b {
     float: left;
     margin-left: 115px;
     margin-top: 35px;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    position: absolute;
+    right: 13px;
+    top: 15px;
+}
+
+.mobile-menu-toggle img {
+    width: 16px;
 }
 
 .nav-links {
@@ -350,12 +365,25 @@ a.color4:hover {
     top: 0px;
 }
 
+.slider-con {
+    position: relative;
+}
 
+.w_full {
+    width: 100%;
+}
 
+.left{
+    float: left;
+}
 
+.right {
+    float: right;
+}
 
-
-
+.hideme {
+    display: none;
+}
 
 
 

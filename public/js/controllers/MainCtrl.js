@@ -7,4 +7,14 @@ angular.module('MainCtrl', []).controller('MainController', function($scope, $wi
 		//var element = $event.currentTarget;
 	}
 
+	$scope.showMenu = function () {
+		var $mmenu = $('.wrapper-mobile');
+		if ($mmenu.hasClass('hideme')) {
+			$mmenu.removeClass('hideme');
+		}
+		else {
+			$mmenu.addClass('hideme');
+		}
+	}
+
 });
