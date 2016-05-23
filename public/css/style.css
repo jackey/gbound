@@ -385,7 +385,10 @@ a.color4:hover {
     display: none;
 }
 
-
+#nav-bar .wrapper-mobile a:hover {
+    text-decoration: none;
+    color:#DE8A0E;
+}
 
 
 
