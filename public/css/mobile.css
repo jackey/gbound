@@ -275,13 +275,13 @@
 
 	.join-us h2 {
 	    margin-top: 0px;
-	    margin-left: 15px;
+	    margin-left: 0px;
 	}
 
 	.join-us p {
-		margin-left: 15px;
-    	margin-top: 20px;
-    	font-size: 14px;
+	    margin-left: 0px;
+	    margin-top: 20px;
+	    font-size: 14px;
 	}
 
 	.banner-invest .w-wrapper {

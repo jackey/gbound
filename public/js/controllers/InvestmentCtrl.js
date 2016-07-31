@@ -1,3 +1,3 @@
-angular.module('Controller').controller('InvestmentController', ['$scope', '$window',function($scope, $window) {
+angular.module('myapp').controller('InvestmentController', ['$scope', '$window',function($scope, $window) {
     
 }]);

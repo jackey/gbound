@@ -1,3 +1,3 @@
-angular.module('Controller').controller('AboutController', ['$scope', '$window',function($scope, $window) {
-    
+angular.module('myapp').controller('AboutController', ['$scope', '$window',function($scope, $window) {
+
 }]);

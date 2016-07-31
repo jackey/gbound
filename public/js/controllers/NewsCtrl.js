@@ -1,3 +1,3 @@
-angular.module('Controller').controller('NewsController', ['$scope', '$window',function($scope, $window) {
+angular.module('myapp').controller('NewsController', ['$scope', '$window',function($scope, $window) {
 
 }]);

@@ -637,25 +637,25 @@ a.color4:hover {
     margin-bottom: 20px;
 }
 
-.animation {
+.view-animate {
     -webkit-transition: all easy 1s;
 }
 
-.animation.ng-enter {
+.view-animate.ng-enter {
     opacity: 0;
 }
 
-.animation.ng-leave {
+.view-animate.ng-leave {
     opacity: 1;
 }
 
-.animation.ng-enter {
+.view-animate.ng-enter {
     opacity: 0;
 }
-.animation.ng-enter.ng-enter-active {
+.view-animate.ng-enter.ng-enter-active {
   opacity: 1;
 }
-.animation.ng-leave.ng-leave-active {
+.view-animate.ng-leave.ng-leave-active {
   opacity: 0;
 }
 

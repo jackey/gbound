@@ -1,4 +1,4 @@
-angular.module('myapp', ['ngRoute', 'ngAnimate', 'appRoutes', 'Controller', 'NerdService',  'GeekService', 'AppDirective'])
+angular.module('myapp')
     .run(['$rootScope', '$location' , function ($rootScope, $location) {
         $rootScope.showMenu = function () {
             var $mmenu = $('.wrapper-mobile');
@@ -20,4 +20,6 @@ angular.module('myapp', ['ngRoute', 'ngAnimate', 'appRoutes', 'Controller', 'Ner
                 $rootScope.showMenu();
             }
         };
+
+        console.log('hello');
     }]);

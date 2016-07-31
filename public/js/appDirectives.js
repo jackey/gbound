@@ -1,6 +1,4 @@
-angular.module('AppDirective', [])
-
-.directive('homeBannerAutoHeight', function ($window) {
+angular.module('myapp').directive('homeBannerAutoHeight', function ($window) {
 	return {
 		link: function (scope, element, attrs) {
 			var radio = 1500 / 570;
