@@ -1,4 +1,4 @@
-angular.module('MainCtrl', []).controller('MainController', function($scope, $window) {
+angular.module('Controller', []).controller('MainController', ['$scope', '$window' ,function($scope, $window) {
 
 	$scope.bannerImageContainerInit = function ($event) {
 		var radio = 1500 / 570;
@@ -17,4 +17,4 @@ angular.module('MainCtrl', []).controller('MainController', function($scope, $wi
 		}
 	}
 
-});
+}]);

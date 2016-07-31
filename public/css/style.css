@@ -390,8 +390,98 @@ a.color4:hover {
     color:#DE8A0E;
 }
 
+.f24 {
+    font-size:24px;
+}
 
+.f16 {
+    font-size: 16px;
+}
 
+.color-white{
+    color: #fff;
+}
 
+.about-us .banner {
+    position: relative;
+}
+
+.banner-about-us .w-wrapper {
+    width: 47%;
+    background: rgba(50, 64, 67, .9);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -23.5%;
+    margin-bottom: 15px;
+    padding: 15px 38px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.content-about-us {
+    width: 1166px;
+    margin: 0 auto;
+}
+
+.content-about-us .section-about-1 {
+    position: relative;
+}
+
+.content-about-us .section-about-1 img{
+    width: 36.8%;
+}
+
+.content-about-us .section-about-1 .w-wrapper {
+    background-color: #ebebeb;
+    left: 36.8%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    padding: 30px 20px;
+}
+
+.bg-dark-yellow {
+    background: #c49d62;
+}
+
+.section-about-2 .w-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.section-about-2 h2 {
+    width: 60%;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30%;
+    top: -24px;
+}
+
+.section-about-2 .margin {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.color-light-dark{
+    color: #3c3a39;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
 
 

@@ -7,8 +7,12 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			templateUrl: 'views/home.html',
 			controller: 'MainController'
 		})
+        .when('/about', {
+            templateUrl: 'views/about.html',
+            controller: 'AboutController'
+        });
 
 
-	$locationProvider.html5Mode(true);
+	$locationProvider.html5Mode(false);
 
 }]);
