@@ -234,6 +234,33 @@
 		margin: 0px 0px 10px 20px;
 	}
 
+	.banner-about-us .w-wrapper {
+	    position: static;
+	    width: 100%;
+	    margin: 0px;
+	    left: 0px;
+	    background: #3c3a39;
+	    padding: 10px 30px;
+	}
+
+	.content-about-us {
+		width: 100%;
+	}
+
+	.content-about-us .section-about-1 img {
+		width: 100%;
+	}
+
+	.content-about-us .section-about-1 .w-wrapper {
+	    width: 100%;
+	    position: static;
+	    padding: 12px 30px;
+	}
+
+	.section-about-2 .margin {
+    	width: 85%;
+	}
+
 }
 
 
