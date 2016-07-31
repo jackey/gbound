@@ -191,8 +191,8 @@
 
 	.section-2 .intro-block {
 	    background-color: #3c3a39;
+	    border-left: none;
 	}
-
 
 	.intro-wrapper img {
 	    display: block;
