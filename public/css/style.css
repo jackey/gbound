@@ -4,6 +4,7 @@ body {
 	font-family: "MicrosoftYaHei";
 }
 
+
 .body {
     max-width: 1400px;
     margin: 0 auto;
@@ -71,6 +72,11 @@ b {
 .nav-links a {
 	font-size: 18px;
     color: #3c3a39;
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
 }
 
 .nav-links a:hover,
