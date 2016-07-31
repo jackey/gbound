@@ -37,14 +37,14 @@
 	<script src="/js/appRoutes.js"></script>
 
 </head>
-<body ng-app="myapp">
+<body ng-app="myapp" >
 <div class="body main-body">
 
 	<div ng-include="'views/header.html'"></div>
 
 	<!-- ANGULAR DYNAMIC CONTENT -->
 	<div class="view-animate-container">
-		<div ng-view class="view-animate" onload="hideMobileMenu()"></div>
+		<div ng-view class="view-animate" onload="hideMobileMenu()" ng-click="hideMobileMenu($event)"></div>
 	</div>
 
 	<div class="footer">

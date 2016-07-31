@@ -14,12 +14,12 @@ angular.module('myapp')
             return ($location.path() === path) ? 'active' : '';
         };
 
-        $rootScope.hideMobileMenu = function () {
+        $rootScope.hideMobileMenu = function (event) {
+
             var $mmenu = $('.wrapper-mobile');
             if (!$mmenu.hasClass('hideme')) {
                 $rootScope.showMenu();
             }
-        };
 
-        console.log('hello');
+        };
     }]);
