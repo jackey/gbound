@@ -12,7 +12,7 @@ body {
 }
 
 .font-eng {
-	font-family: "dinpro-light";
+	font-family: "Arial";
 }
 
 b {
@@ -637,23 +637,25 @@ a.color4:hover {
     margin-bottom: 20px;
 }
 
-.main-content-wrapper {
-    
+.animation {
+    -webkit-transition: all easy 1s;
 }
 
-.main-content-wrapper.ng-enter, .main-content-wrapper.ng-leave {
-  -webkit-transition: all easy .8s;
-  -o-transition: all easy .8s;
-  transition: all easy .8s;
-}
-
-.main-content-wrapper.ng-enter {
+.animation.ng-enter {
     opacity: 0;
 }
-.main-content-wrapper.ng-enter.ng-enter-active {
+
+.animation.ng-leave {
+    opacity: 1;
+}
+
+.animation.ng-enter {
+    opacity: 0;
+}
+.animation.ng-enter.ng-enter-active {
   opacity: 1;
 }
-.main-content-wrapper.ng-leave.ng-leave-active {
+.animation.ng-leave.ng-leave-active {
   opacity: 0;
 }
 
