@@ -15,10 +15,10 @@
 	<link rel="stylesheet" href="/css/mobile.css" media="(max-width: 1000px)">
 
 	<!-- JS -->
-	<script src="/libs/jquery/dist/jquery.js"></script>
+	<script src="/libs/jquery/dist/jquery.min.js"></script>
 	<script src="/libs/jquery.easing.js"></script>
-	<script src="/libs/angular/angular.js"></script>
-	<script src="/libs/angular-route/angular-route.js"></script>
+	<script src="/libs/angular/angular.min.js"></script>
+	<script src="/libs/angular-route/angular-route.min.js"></script>
 
 	<!-- ANGULAR CUSTOM -->
 	<script src="/js/services/NerdService.js"></script>
@@ -40,7 +40,7 @@
 
 
 	<!-- ANGULAR DYNAMIC CONTENT -->
-	<div ng-view></div>
+	<div ng-view class="main-content-wrapper" onload="hideMobileMenu()"></div>
 
 	<div class="footer">
 		<div class="wrapper">
