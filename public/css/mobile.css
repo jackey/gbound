@@ -261,6 +261,91 @@
     	width: 85%;
 	}
 
+	.join-us .w-wrapper {
+	    width: auto;
+	    height: auto;
+	    padding: 27px 14px;
+	    top: 40%;
+	    left: 6%;
+	    background-color: inherit;
+	    background-image: url(../misc/images/join-us-tbg-mobile.png);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	}
+
+	.join-us h2 {
+	    margin-top: 0px;
+	    margin-left: 15px;
+	}
+
+	.join-us p {
+		margin-left: 15px;
+    	margin-top: 20px;
+    	font-size: 14px;
+	}
+
+	.banner-invest .w-wrapper {
+	    position: static;
+	    width: 100%;
+	    margin-left: 0px;
+	    padding: 15px 15px;
+	}
+
+	.content-invest {
+	    width: 100%;
+	}
+
+	.content-invest .card {
+	    width: 100%;
+	    float: none;
+	    margin-right: 0px;
+	    margin-bottom: 0px;
+	    padding-bottom: 0px;
+	    padding: 20px 0px;
+	    margin-top: 15px;
+	}
+
+	.content-invest .p1,
+	.content-invest .p2{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.content-invest .p3 {
+		padding: 0px 20px;
+	}
+
+	.content-invest-bootom > .wrapper {
+	    width: 100%;
+	    margin: 0px auto;
+	    padding: 25px 20px;
+	    text-align: center;
+	}
+
+	.news{
+		padding:0px;
+	}
+
+	.banner-news .w-wrapper {
+	    width: 75%;
+	    padding: 15px 20px;
+	    bottom: -100px;
+	}
+
+	.content-news {
+	    margin-top: 100px;
+	    width: 100%;
+	    padding: 25px 30px;
+	}
+
+	.content-news .card.last {
+	    padding-top: 20px;
+	    padding-left: 20px;
+	    padding-right: 20px;
+	}
+
+
+
 }
 
 

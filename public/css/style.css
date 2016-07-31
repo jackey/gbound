@@ -407,7 +407,7 @@ a.color4:hover {
 }
 
 .banner-about-us .w-wrapper {
-    width: 47%;
+    width: 613px;
     background: rgba(50, 64, 67, .9);
     position: absolute;
     bottom: 0px;
@@ -451,6 +451,7 @@ a.color4:hover {
     background: #c49d62;
 }
 
+
 .section-about-2 .w-wrapper {
     position: relative;
     display: inline-block;
@@ -483,5 +484,158 @@ a.color4:hover {
 .mt20 {
     margin-top: 20px;
 }
+
+.join-us > .wrapper {
+    position: relative;
+}
+
+.join-us .w-wrapper {
+    background: rgba(202, 167, 113, 0.9);
+    width: 357px;
+    position: absolute;
+    right: 22%;
+    top: 0px;
+    height: 100%;
+}
+
+.join-us h2 {
+    font-weight: bold;
+    margin-top: 30%;
+    margin-left: 40px;
+}
+
+.join-us p {
+    margin-left: 40px;
+    margin-top: 35px;
+    line-height: 150%;
+}
+
+.banner-invest {
+    position: relative;
+}
+
+.banner-invest .w-wrapper {
+    background: rgba(27, 18, 14, .9);
+    padding: 0px 15px;
+    width: 648px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    margin-left: -324px;
+}
+
+.block {
+    display: block;
+}
+
+.tright {
+    text-align: right;
+}
+
+.content-invest {
+    width: 746px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.color-yellow-light {
+    color: #d2a75b;
+}
+
+.content-invest .cards ul {
+    overflow: hidden;
+}
+
+.content-invest .card {
+    width: 31.33%;
+    float: left;
+    background: #3c3a39;
+    margin-right: 3%;
+    padding: 30px 30px 20px 30px;
+    padding-bottom: 500em;
+    margin-bottom: -500em;
+}
+
+.content-invest .card.last {
+    margin-right: 0%;
+}
+
+.color-yellow-dark {
+    color: #d2a75b;
+}
+
+.mb0 {
+    margin-bottom: 0px;
+}
+
+.content-invest .p3 {
+    margin-top: 13px;
+}
+
+.content-invest-bootom {
+    background: #d8d8d7;
+}
+
+
+.content-invest-bootom > .wrapper{
+    width: 746px;
+    margin: 0px auto;
+    padding: 25px 0px;
+    text-align: center;
+}
+
+.banner-news {
+    position: relative;
+}
+
+.banner-news .w-wrapper {
+    background: #e0b253;
+    position: absolute;
+    bottom: 25px;
+    right: 0px;
+    width: 778px;
+    padding: 30px 40px;
+}
+
+.news {
+    padding: 0px 115px;
+}
+
+.content-news {
+    width: 876px;
+    margin: 0 auto;
+    padding: 25px 0px 0px 35px;
+    text-align: center;
+}
+
+.cards ul {
+    overflow: hidden;
+}
+
+.content-news .card {
+    width: 50%;
+    float: left;
+    padding-bottom: 500em;
+    margin-bottom: -500em;
+}
+
+.content-news .card.last {
+    background: #3c3a39;
+    padding: 50px;
+}
+
+.content-news .card.last p {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
 
 
