@@ -60,6 +60,10 @@ b {
 	list-style-type: none;
 }
 
+.font-bold {
+    font-weight: bold;
+}
+
 .nav-links li {
     float: left;
     min-width: 75px;
@@ -340,14 +344,19 @@ a.color4:hover {
     text-transform: capitalize;
 }
 
+.intro-block h2 span {
+    font-size: 30px;
+    text-indent: 0.5em;
+    display: inline-block;
+}
+
 .intro-block p {
 	font-size: 15px;
     line-height: 33px;
 }
 
 .section-3 .intro-block {
-    background-color: #c49c61;
-    left: 3.2%;
+    right: 3.2%;
     top: -1px;
 }
 
@@ -668,9 +677,18 @@ a.color4:hover {
   opacity: 0;
 }
 
+.section-5 .intro-block {
+    background: #c49c61;
+    left: 3.2%;
+}
 
+.color5 {
+    color: #3c3a39;
+}
 
-
+.f18 {
+    font-size: 18px;
+}
 
 
 
