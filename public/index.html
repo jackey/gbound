@@ -37,22 +37,24 @@
 	<script src="/js/appRoutes.js"></script>
 
 </head>
-<body ng-app="myapp" >
-<div class="body main-body">
+<body ng-app="myapp" autozoom>
+	<script type="text/javascript">
 
-	<div ng-include="'views/header.html'"></div>
 
-	<!-- ANGULAR DYNAMIC CONTENT -->
-	<div class="view-animate-container">
-		<div ng-view class="view-animate" onload="hideMobileMenu()" ng-click="hideMobileMenu($event)"></div>
-	</div>
+	</script>
+	<div class="body main-body">
+		<div ng-include="'views/header.html'"></div>
 
-	<div class="footer">
-		<div class="wrapper">
-			<p class="beian">沪ICP备16017396号-1</p>
+		<!-- ANGULAR DYNAMIC CONTENT -->
+		<div class="view-animate-container">
+			<div ng-view class="view-animate" onload="hideMobileMenu()" ng-click="hideMobileMenu($event)"></div>
+		</div>
+
+		<div class="footer">
+			<div class="wrapper">
+				<p class="beian">沪ICP备16017396号-1</p>
+			</div>
 		</div>
 	</div>
-
-</div>
 </body>
 </html>

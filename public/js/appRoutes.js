@@ -19,6 +19,10 @@ angular.module('myapp').config(['$routeProvider', '$locationProvider', function(
             templateUrl: 'views/news.html',
             controller: 'NewsController'
         })
+        .when('/newslist', {
+            templateUrl: 'views/newslist.html',
+            controller: 'NewsListController',
+        })
         .when('/about', {
             templateUrl: 'views/about.html',
             controller: 'AboutController'

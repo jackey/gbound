@@ -1,12 +1,29 @@
 @media (max-width: 1000px) {
+
+	body {
+		font-size: 8px;
+	}
+	
+	.color-dark-yellow {
+		color: #c49c61;
+	}
+
+	.color-light-black {
+		color: #393939;
+	}
+
 	.nav-bar .logo {
-	    width: 100px;
-	    height: 26px;
-	    background: url(../misc/images/logo.png) no-repeat top center;
-	    float: left;
-	    margin-left: 12px;
-	    margin-top: 15px;
-	    background-size: 100%;
+		width: 15.38em;
+    height: 4em;
+    background: url(../misc/images/logo.png) no-repeat top center;
+    float: left;
+    margin-left: 1.84em;
+    margin-top: 2.3em;
+    background-size: 100%;
+	}
+
+	.mobile-menu-toggle img {
+		width: 3em;
 	}
 
 	#nav-bar {
@@ -14,7 +31,7 @@
 	}
 
 	#nav-bar .wrapper {
-		height: 50px;
+    height: 7.7em;
 	}
 
 	#nav-bar .wrapper-mobile {
@@ -26,7 +43,7 @@
 	}
 
 	#nav-bar .wrapper-mobile li {
-		padding: 20px 0px;
+		padding: 1.53em 0px;
 		background: url(../misc/images/line2.png) no-repeat bottom center;
 	}
 
@@ -35,7 +52,8 @@
 	}
 
 	#nav-bar .wrapper-mobile a {
-		color: #c49c61;
+    color: #c49c61;
+    font-size: 1.8em;
 	}
 
 	.nav-links {
@@ -50,6 +68,8 @@
 
 	.mobile-menu-toggle {
 		display: block;
+    top: 2.3em;
+    right: 2em;
 	}
 
 	.top-banner img {
@@ -57,27 +77,26 @@
 	}
 
 	.top-banner .slider {
-	    height: 120px;
-	    overflow: hidden;
+    overflow: hidden;
 	}
 
 	.top-banner .ep {
 		position: absolute;
-	    width: 100%;
-	    text-align: center;
-	    color: #fff;
-	    font-size: 15px;
-	    margin-bottom: 0px;
-	    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.15em;
+    margin-bottom: 0px;
+    bottom: 2.3em;
 	 }
 
 	 .top-banner .readmore {
-	    bottom: 10px;
+	    bottom: .76em;
 	    width: 66%;
-	    height: 40px;
+	    height: 3.07em;
 	    margin-left: -33%;
 	    left: 50%;
-	    line-height: 40px;
+	    line-height: 3.07em;
 	 }
 
 	 .nav-bar .search {
@@ -118,8 +137,8 @@
 	 }
 
 	.section-content .gray-con {
-	    padding-left: 10px;
-	    padding-right: 10px;
+	    padding-left: .7em;
+	    padding-right: .7em;
 	    padding-top: 0px;
 	}
 
@@ -128,41 +147,41 @@
 	}
 
 	.money-group .b1 {
-		font-size: 40px;
+		font-size: 3.07em;
 	}
 
 	.money-group .b2 {
-	    font-size: 19px;
-	    margin-left: 7px;
+	    font-size: 1.45em;
+	    margin-left: 0.5em;
 	}
 
 	.money-group .b3 {
-	    font-size: 14px;
-	    margin-left: 20px;
+	    font-size: 1.07em;
+	    margin-left: 1.53em;
 	}	
 	.money-group .p1 {
-	    font-size: 9px;
+	    font-size: .69em;
 	}
 
 	.section-1 .section-content {
 	    height: auto;
 	    width: 100%;
-	    padding: 0px 15px;
+	    padding: 0px 1.15em;
 	}
 
 	.section-1 .section-content-1 {
-		height: 121px;
-	    padding: 0px 15px;
+		height: 9.3em;
+	    padding: 0px 1.15em;
 	}
 
 	.white-con h3 {
-		font-size: 20px;
+		font-size: 1.15em;
 	}
 
 	.white-con .white-rect {
-	    height: 23px;
-	    width: 8px;
-	    bottom: 24px;
+	    height: 1.76em;
+	    width: 0.61em;
+	    bottom: 1.84em;
 	}
 
 	.section-1 {
@@ -170,7 +189,7 @@
 	}
 
 	.money-group .m-h-center {
-	    width: 127px;
+	    width: 9.78em;
 	    margin: 0 auto;
 	}
 
@@ -184,14 +203,14 @@
 	.intro-wrapper {
 		position: relative;
 		overflow: hidden;
-    	margin-bottom: 7px;
+		margin-bottom: 2.3em;
 	}
 
 	.intro-wrapper .intro-block {
-	    padding: 0px;
-	    position: static;
-	    width: 87%;
-	    padding: 0 15px 10px 15px;
+    padding: 0px;
+    position: static;
+    width: 80%;
+    padding: 3.23em 2em 0em 2.2em;
 	}
 
 	.section-2 .intro-block {
@@ -202,7 +221,7 @@
 	.intro-wrapper img {
 	    display: block;
 	    height: 100%;
-    	width: 13%;
+    	width: 20%;
 	    position: absolute;
 	    right: 0px;
 	}
@@ -213,44 +232,44 @@
 
 
 	.intro-block a, .intro-block a:hover {
-	    float: right;
-	    position: static;
-	    font-size: 13px;
+		float: right;
+    position: static;
+    font-size: 1.2em;
+    margin-top: 1.46em;
+    margin-bottom: 1.86em;
+    margin-right: 0.4em;
 	}
 
 	.intro-block p {
-	    font-size: 13px;
+	    font-size: 1.2rem;
 	    line-height: 200%;
 	}
 
 	.intro-block h2 {
-		font-size: 22px;
+		font-size: 1.7em;
 	}
 
 	.intro-block h2 span {
-		font-size: 13px;
+		font-size: 1em;
 	}
 
 	.footer .wrapper {
-		height: 70px;
-	}
-
-	.footer p.beian {
-	    margin-right: 60px;
-	    margin-bottom: 7px;
+    height: 8.23em;
 	}
 
 	.money-group p {
-		margin: 0px 0px 10px 20px;
+		margin: 0px 0px 0.76em 1.53em;
 	}
 
 	.banner-about-us .w-wrapper {
-	    position: static;
-	    width: 100%;
-	    margin: 0px;
-	    left: 0px;
-	    background: #3c3a39;
-	    padding: 10px 30px;
+    width: 80%;
+    margin: 0px;
+    left: 0px;
+    background: rgba(77, 76, 74, 0.9);
+    padding: .76em 2.3em;
+    position: absolute;
+    margin-left: 10%;
+    bottom: 7%;
 	}
 
 	.content-about-us {
@@ -259,12 +278,35 @@
 
 	.content-about-us .section-about-1 img {
 		width: 100%;
+    display: block;
+    height: auto;
+	}
+
+	.content-about-us .section-about-1 .desc {
+    background: none;
+    display: block;
+    width: 43%;
+    position: absolute;
+    right: 1%;
+    top: 20%;
+	}
+
+	.content-about-us .section-about-1 .desc p {
+    height: auto;
+    position: static;
+    margin-top: 0px;
+    padding: 0px;
+    font-size: 1.6em;
+	}
+
+	.content-about-us .section-about-2 .desc p {
+	  font-size: 1.6em;
 	}
 
 	.content-about-us .section-about-1 .w-wrapper {
 	    width: 100%;
 	    position: static;
-	    padding: 12px 30px;
+	    padding: 0.92em 2.3em;
 	}
 
 	.section-about-2 .margin {
@@ -272,33 +314,39 @@
 	}
 
 	.join-us .w-wrapper {
-	    width: auto;
-	    height: auto;
-	    padding: 27px 14px;
-	    top: 40%;
-	    left: 6%;
-	    background-color: inherit;
-	    background-image: url(../misc/images/join-us-tbg-mobile.png);
-	    background-size: contain;
-	    background-repeat: no-repeat;
+		padding: 4.1em 0px 4.1em 2.15em;
+    top: 40%;
+    left: 6%;
+    background-color: inherit;
+    background-image: url(../misc/images/join-us-tbg-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 21.69em;
+    box-sizing: border-box;
+    overflow: hidden;
 	}
 
 	.join-us h2 {
-	    margin-top: 0px;
-	    margin-left: 0px;
+    margin-top: -0.85em;
+    margin-left: 0px;
 	}
 
 	.join-us p {
-	    margin-left: 0px;
-	    margin-top: 20px;
-	    font-size: 12px;
+    margin-left: 0px;
+    margin-top: 0em;
+    font-size: 1.6em;
+    line-height: 150%;
+    margin: 0px;
+    margin-top: 0.5em;
 	}
 
 	.banner-invest .w-wrapper {
-	    position: static;
-	    width: 100%;
-	    margin-left: 0px;
-	    padding: 15px 15px;
+    position: absolute;
+    width: 72%;
+    padding: 1.15em 1.15em;
+    left: 0px;
+    margin-left: 14%;
 	}
 
 	.content-invest {
@@ -311,24 +359,24 @@
 	    margin-right: 0px;
 	    margin-bottom: 0px;
 	    padding-bottom: 0px;
-	    padding: 20px 0px;
-	    margin-top: 15px;
+	    padding: 1.52em 0px;
+	    margin-top: 1.15em;
 	}
 
 	.content-invest .p1,
 	.content-invest .p2{
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 1.53em;
+		padding-right: 1.53em;
 	}
 
 	.content-invest .p3 {
-		padding: 0px 20px;
+		padding: 0px 1.53em;
 	}
 
 	.content-invest-bootom > .wrapper {
 	    width: 100%;
 	    margin: 0px auto;
-	    padding: 25px 20px;
+	    padding: 1.92em 1.53em;
 	    text-align: center;
 	}
 
@@ -338,38 +386,189 @@
 
 	.banner-news .w-wrapper {
 	    width: 75%;
-	    padding: 15px 20px;
-	    bottom: -100px;
+	    padding: 1.15em 1.53em;
+	    bottom: -7.69em;
 	}
 
 	.content-news {
 	    margin-top: 0px;
 	    width: 100%;
-	    padding: 25px 30px;
+	    padding: 1.92em 2.3em;
 	}
 
 	.content-news .card.last {
-	    padding-top: 20px;
-	    padding-left: 20px;
-	    padding-right: 20px;
+	    padding-top: 1.53em;
+	    padding-left: 1.53em;
+	    padding-right: 1.53em;
 	}
 
 	.section-7 .intro-wrapper .intro-block {
-		width: 87%;
-    	float: right;
-		background: #c49c61;
+    float: left;
+    background: #3c3a39;
 	}
 
 	.section-7 .intro-wrapper img {
-		left: 0px;
+		right: 0px;
+	}
+
+	.section-7 .wrapper {
+	   border-top: 0.38em solid #c49d62;
+	}
+
+	.section-8	 .intro-block {
+    background: #c49c61;
+    float: left;
+	}
+
+	.section-9 .intro-block {
+		float: left;
+		background: #3c3a39;
+	}
+
+	.content-newslist .desc {
+		width: 100%;
+	}
+
+	.content-newslist .desc .mshow img {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+	}
+
+	.content-newslist .desc .desc-inner h4 {
+		margin-top: 3%;
+		font-size: 1.61em;
+	}
+
+	.content-newslist .desc .desc-inner p {
+		margin-top: 0px;
+		font-size: 1.61em;
+	}
+
+	.content-about-us .section-about-2 .img-con img {
+    width: 100%;
+    margin-left: 0px;
+	}
+
+	.content-about-us .section-about-2 .desc {
+    background: rgba(219, 185, 124, 0.8);
+    color: #fff;
+    width: 67%;
+    position: absolute;
+    top: 9%;
+    height: 82%;
+    display: table-cell;
+    padding: 1.53em 1.53em;
+    vertical-align: middle;
+    box-sizing: border-box;
+    left: 0%;
+	}
+
+	.content-invest .desc {
+		width: 100%;
+	}
+
+	.content-invest .desc img {
+		width: 100%;
+	}
+
+	.content-invest .desc .desc-inner {
+		right: 1%;
+    top: 17%;
+    padding: 1.53em 1.53em;
+    width: 65%;
+    height: auto;
+	}
+
+	.content-invest .spin-con {
+		width: 90%;
+    left: 0%;
+    height: 6.92em;
+    margin-left: 5%;
+    min-height: 90%;
+	}
+
+	.content-invest .spin-con .spin-1, .content-invest .spin-con .spin-2 {
+    background-size: cover;
+    background-position: left center;
+	}
+
+	.content-invest .spin-con .spin-1 {
+		background-image: url(../misc/imagesv2/minvest_pop01.png);
+	}
+
+	.content-invest .spin-con .spin-2 {
+		background-image: url(../misc/imagesv2/minvest_pop02.png);
+	}
+
+	.content-invest .section-invest-3 {
+    margin-bottom: 1.53em;
+	}
+
+	.content-invest .spin-con .spin-1 p, 
+	.content-invest .spin-con .spin-2 p {
+		padding-left: 35%;
+    padding-right: 5%;
+    padding-top: 0.76em;
+	}
+
+	.content-invest .section-invest-3 .desc .desc-inner {
+		left: 3%;
+    top: 25%;
+    width: 65%;
+	}
+
+	.content-invest .section-invest-3 .desc .desc-inner p {
+    padding: 0px 1.5em;
+	}
+
+	.f24 {
+	    font-size:1.84em;
+	}
+
+	.f16 {
+	    font-size: 1.23em;
+	}
+
+	.f18 {
+	    font-size: 1.38em;
+	}
+
+	.content-invest .desc .desc-inner p {
+		font-size: 1.23em;
+	  padding: 0 1.69em;
 	}
 
 
+  
+  .h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
 
+  .content-about-us h3 {
+  	font-size: 1.8rem;
+  }
 }
 
 
+@media (max-width: 320px) {
+	.banner-about-us .w-wrapper {
+		bottom: 4%;
+	}
+}
 
 
+@media (min-width: 450px) {
+	body {
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 630px) {
+	body {
+		font-size: 12px;
+	}
+}
 
 

@@ -7,4 +7,7 @@ angular.module('myapp').controller('MainController', ['$scope', '$window' ,funct
 		//var element = $event.currentTarget;
 	}
 
+}])
+.controller('NewsListController', ['$scope', '$window', function ($scope, $window) {
+  //
 }]);

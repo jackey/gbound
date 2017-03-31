@@ -10,8 +10,14 @@ angular.module('myapp')
             }
         };
 
-        $rootScope.activeClass = function (path){
-            return ($location.path() === path) ? 'active' : '';
+        $rootScope.activeClass = function (path) {
+            var args = Array.prototype.slice.call(arguments, 0);
+            for (var i = 0; i < args.length; i++) {
+                if ($location.path() === args[i]) {
+                    return 'active';
+                }
+            }
+            return '';
         };
 
         $rootScope.hideMobileMenu = function (event) {
