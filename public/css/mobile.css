@@ -3,6 +3,14 @@
 	body {
 		font-size: 8px;
 	}
+
+  .slick-slide .mhide {
+    display: none;
+  }
+
+  .slick-slide .mshow {
+    display: block;
+  }
 	
 	.color-dark-yellow {
 		color: #c49c61;
@@ -108,7 +116,7 @@
 	 }
 
 	 .mhide {
-	 	display: none;
+	 	display: none !important;
 	 }
 
 	 .mshow {
@@ -570,5 +578,7 @@
 		font-size: 12px;
 	}
 }
+
+
 
 

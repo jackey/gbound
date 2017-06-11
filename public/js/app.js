@@ -1,5 +1,5 @@
 angular.module('myapp')
-    .run(['$rootScope', '$location' , function ($rootScope, $location) {
+    .run(['$rootScope', '$location',  function ($rootScope, $location) {
         $rootScope.showMenu = function () {
             var $mmenu = $('.wrapper-mobile');
             if ($mmenu.hasClass('hideme')) {

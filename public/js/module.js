@@ -1,4 +1,4 @@
-angular.module('myapp', ['ngRoute', 'ngAnimate', 'NerdService',  'GeekService'])
+angular.module('myapp', ['ngRoute', 'ngAnimate', 'angular-scroll-animate', 'NerdService',  'GeekService'])
 .directive('autozoom', [function () {
   return {
     restrict: 'A',
@@ -8,7 +8,6 @@ angular.module('myapp', ['ngRoute', 'ngAnimate', 'NerdService',  'GeekService'])
         return $(element[0]).html();
       }, function (length) {
         if ($(window).width() > 640) {
-          console.log('No nO ');
           return ;
         }
         var ratio = $(window).width() / 640;

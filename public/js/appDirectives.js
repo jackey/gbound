@@ -1,3 +1,17 @@
+$.fn.waitForImages = function (callback) {
+    var $img = $('img', $(this)),
+        totalImg = $img.length;
+
+    var waitImgLoad = function () {
+        totalImg--;
+        if (!totalImg) {
+            callback();
+        }
+    };
+
+    $img.on('load', waitImgLoad);
+};
+
 angular.module('myapp').directive('homeBannerAutoHeight', function ($window) {
 	return {
 		link: function (scope, element, attrs) {
@@ -19,36 +33,22 @@ angular.module('myapp').directive('homeBannerAutoHeight', function ($window) {
 
 .directive('slider', function () {
 	return function (scope, element, attr) {
-		var $element = $(element[0]);
-		var $imgs = $element.find('img').each(function (index) {
-			if (index == 0) return 
-			$(this).css({
-				opacity: 0
-			});
+
+		$(element[0]).find('img').css({
+			visibility: 'hidden',
+			height: 1
 		});
-		$element.addClass('slider-directive');
-		var crtIndex = 0,
-			running = false;
-		setInterval(function () {
-			if (running) return ;
-
-			running = true;
-
-			$imgs.eq(crtIndex).animate({
-				opacity: 0
-			}, {duration: 800, easing: 'easeInCubic'});
-
-			if (crtIndex >= $imgs.size() - 1) crtIndex = -1;
-
-			$imgs.eq(++crtIndex).animate({
-				opacity: 1
-			}, {
-				duration: 800,
-				easing: 'easeInCubic',
-				complete: function () {
-					running =  false;
-				}
+	
+		$(element[0]).waitForImages(function () {
+			$(element[0]).slick({
+				infinite: true,
+				autoplay: true,
+        autoplaySpeed: 2*1000
 			});
-		}, 2000);
+		$(element[0]).find('img').css({
+			visibility: 'visible',
+			height: 'auto'
+		});
+		});
 	}
 });
