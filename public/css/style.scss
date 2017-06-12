@@ -828,6 +828,12 @@ a.color-dark-yellow:hover {
         width: 1166px;
         margin: 0 auto;
         margin-top: 25px;
+ 
+        a { 
+            position: relative;
+            display: inline-block;
+            margin-bottom:  15px;
+        }
 
         .desc-inner {
             position: absolute;

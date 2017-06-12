@@ -23,6 +23,10 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'Y',
+	'wysiwyg additional plugins': 'paste',
+	'wysiwyg additional options': {
+		'paste_data_images': true
+	}
 });
 
 // Load your project's Models
@@ -44,8 +48,8 @@ keystone.set('routes', require('./routes'));
 
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
-	posts: ['posts', 'post-categories'],
-	galleries: 'galleries',
+	posts: ['posts'],
+	//galleries: 'galleries',
 	ys: 'ys',
 });
 

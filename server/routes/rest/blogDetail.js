@@ -3,14 +3,13 @@ var async = require('async');
 
 exports = module.exports = function (req, res) {
   
-  var q = keystone.list('Post').paginate({
-    page: 1,
-    perPage: 1000,
-    filters: {
-      state: 'published'
-    },
-  })
-  .sort('-publishedDate');
+  var id = req.params.id;
+
+  var q = keystone
+    .list('Post')
+    .model
+    .find()
+    .where({_id: id});
 
   q.exec(function(err, results) {
     if (err) {
@@ -20,19 +19,25 @@ exports = module.exports = function (req, res) {
       });
     } else {
       var items = [];
-      results.results.forEach(function (item) {
+      results.forEach(function (item) {
         // var img = item.image.url;
         // var parts = img.split('/');
         // parts[parts.length - 2] = 'c_fill,e_sharpen:200,g_faces,h_192,w_1166';
         // item.image.url = parts.join('/');
 
         items.push(item);
-
       });
-      res.json({
-        err: null,
-        data: items
-      });
+      if (items.length <= 0) {
+        res.json({
+          err: '没找到数据',
+          data:null
+        })
+      } else {
+        res.json({
+          err: null,
+          data: items[0]
+        });
+      }
     }
   });
   

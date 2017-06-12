@@ -14,7 +14,7 @@ angular.module('myapp').config(['$routeProvider', '$locationProvider', function(
         templateUrl: 'views/investment.html',
         controller: 'InvestmentController'
     })
-    .when('/news', {
+    .when('/news/:id', {
         templateUrl: 'views/news.html',
         controller: 'NewsController'
     })

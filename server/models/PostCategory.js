@@ -6,6 +6,7 @@ var keystone = require('keystone');
  */
 
 var PostCategory = new keystone.List('PostCategory', {
+  label: 'News Category',
 	autokey: { from: 'name', path: 'key', unique: true },
 });
 
@@ -15,4 +16,4 @@ PostCategory.add({
 
 PostCategory.relationship({ ref: 'Post', path: 'posts', refPath: 'categories' });
 
-PostCategory.register();
+//PostCategory.register();

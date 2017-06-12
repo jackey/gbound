@@ -30,6 +30,11 @@ angular.module('myapp').directive('homeBannerAutoHeight', function ($window) {
 		}
 	}
 })
+.filter('to_trusted', ['$sce', function ($sce) {
+  return function (text) {
+    return $sce.trustAsHtml(text);
+  }
+}])
 
 .directive('slider', function () {
 	return function (scope, element, attr) {
