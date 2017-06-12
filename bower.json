@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "dependencies": {
     "bootstrap": "latest",
+    "slick-carousel": "latest",
     "angular": "^1.6.4",
     "angular-route": "latest",
     "angular-animate": "latest",
     "angular-scroll-animate": "^0.9.9",
-    "angular-carousel": "^1.0.1"
+    "angular-carousel": "^1.0.1",
+    "slick-carousel": "^1.6.0",
+    "slick": "*"
   },
   "resolutions": {
     "angular": "^1.6.4"
