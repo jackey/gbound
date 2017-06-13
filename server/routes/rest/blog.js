@@ -1,16 +1,23 @@
 var keystone = require('keystone');
 var async = require('async');
+var url = require('url');
 
 exports = module.exports = function (req, res) {
   
+  var num = 1000; // 默认显示所有的新闻
+  var parsedURL = url.parse(req.url, true);
+  if (parsedURL) {
+    num = parsedURL.query.num || num;
+  }
+
   var q = keystone.list('Post').paginate({
     page: 1,
-    perPage: 1000,
+    perPage: num,
     filters: {
       state: 'published'
     },
   })
-  .sort('-publishedDate');
+  .sort('+weight');
 
   q.exec(function(err, results) {
     if (err) {

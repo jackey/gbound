@@ -96,12 +96,13 @@
 				</div> 
 			</div>
 
-			<div class="section section-5 mhide clearfix not-visible" when-visible="animateElementIn" when-not-visible="animateElementOut">
+			<div ng-repeat="news in newsItems track by $index" 
+				ng-class="{  'section section-5 mhide clearfix not-visible': true, odd: $index % 2 == 0, even: $index % 2 != 0 }" when-visible="animateElementIn" when-not-visible="animateElementOut">
 				<div class="img-con">
 					<div class="h40"></div>
 					<div class="intro-block">
 						<h2 class="font-eng color-dark-yellow">新闻中心<span>News</span></h2>
-						<p><font class="font-bold f18">中捷敲定60亿欧元大单</font><br>记者在现场了解到，在习近平与泽曼的见证下，中捷双方企业签署了<span class="">总计60亿欧元</span>的大单...</p>
+						<p><font class="font-bold f18">{{news.title}}</font><br></p><p ng-bind-html="news.content.brief | to_trusted"></p>
 						<a href="/#!/newslist" class="color-dark-yellow">了解更多 >> </a>
 					</div>
 					<img class="" src="misc/imagesv2/home_banner2.jpg" alt="">
@@ -120,7 +121,8 @@
 				</div>
 			</div>
 
-			<div class="section section-7 mshow clearfix not-visible" when-visible="animateElementIn" when-not-visible="animateElementOut">
+			<div ng-repeat="news in newsItems track by $index" ng-class="{'section section-7 mshow clearfix not-visible': true, odd: $index % 2 == 0, even: $index % 2 != 0 }" 
+					 when-visible="animateElementIn" when-not-visible="animateElementOut">
 				<div class="wrapper">
 					<div class="hp-4">
 						<div class="clearfix">
@@ -130,8 +132,7 @@
 					<div class="clearfix intro-wrapper">
 						<div class="intro-block right">
 							<h2 class="font-eng color-dark-yellow">新闻中心<span>News</span></h2>
-							<p><font class="font-bold f18">中捷敲定60亿欧元大单</font><br>记者在现场了解到，在习近平与泽曼的见证下，中捷双方企业签署了
-								<span class="">总计60亿欧元</span>的大单，涉及能源、金融、核电、航空、酿酒、化工等多个领域。</p>
+							<p><font class="font-bold f18">{{news.title}}</font><br></p><p ng-bind-html="news.content.brief | to_trusted"></p>
 							<a href="/#!/newslist" class="color-dark-yellow">了解更多 > </a>
 						</div>
 						<img src="misc/imagesv2/m_hp7.jpg" class="left" alt="">
