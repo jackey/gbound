@@ -18,7 +18,6 @@ keystone.init({
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'pug',
-
 	'auto update': true,
 	'session': true,
 	'auth': true,
@@ -54,7 +53,6 @@ keystone.set('nav', {
 });
 
 // Start Keystone to connect to your database and initialise the web server
-
 
 
 keystone.start();

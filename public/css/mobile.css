@@ -415,9 +415,18 @@
     background: #3c3a39;
 	}
 
+  .section-7.even .intro-wrapper .intro-block {
+    float: right;
+  }
+
 	.section-7 .intro-wrapper img {
 		right: 0px;
 	}
+
+  .section-7.even .intro-wrapper img {
+    left: 0px;
+    right: auto;
+  }
 
 	.section-7 .wrapper {
 	   border-top: 0.38em solid #c49d62;
@@ -556,6 +565,14 @@
 
   .content-about-us h3 {
   	font-size: 1.8rem;
+  }
+
+  .content-newslist .desc a.mhide {
+    display: none;
+  }
+
+  .content-newslist .desc a.mshow {
+    display: block;
   }
 }
 

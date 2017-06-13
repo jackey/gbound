@@ -1,4 +1,4 @@
-angular.module('myapp').controller('MainController', ['$scope', '$window' ,function($scope, $window) {
+angular.module('myapp').controller('MainController', ['$scope', '$window', 'Nerd' ,function($scope, $window, Nerd) {
 
 	$scope.bannerImageContainerInit = function ($event) {
 		var radio = 1500 / 570;
@@ -14,7 +14,14 @@ angular.module('myapp').controller('MainController', ['$scope', '$window' ,funct
   $scope.animateElementOut = function ($el) {
     $el.addClass('not-visible');
     $el.removeClass('animated fadeIn');
-  }
+  };
+
+  $scope.newsItems = [];
+  Nerd(null, 5).then(function (res){
+    $scope.newsItems = res.data.data;
+  });
+
+
 
 }])
 .controller('NewsListController', ['$scope', '$window', 'Nerd', function ($scope, $window, Nerd) {

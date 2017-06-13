@@ -691,6 +691,11 @@ a.color4:hover {
     top: -1px;
 }
 
+.section-5.even .intro-block {
+    right: 3.2%;
+    left: auto;
+}
+
 .color5 {
     color: #3c3a39;
 }
@@ -833,6 +838,10 @@ a.color-dark-yellow:hover {
             position: relative;
             display: inline-block;
             margin-bottom:  15px;
+
+            &.mshow {
+                display: none;
+            }
         }
 
         .desc-inner {

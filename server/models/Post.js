@@ -12,8 +12,16 @@ var Post = new keystone.List('Post', {
 	autokey: { path: 'slug', from: 'title', unique: true },
 });
 
+function range(begin, end) {
+	let nums = [];
+	for (var i = 0; i < end; i++ ) nums.push(i)
+
+	return nums
+}
+
 Post.add({
 	title: { type: String, required: true, },
+	weight: {type: Types.Select, options: range(0, 100).join(','), default: '0', index: true},
 	state: { type: Types.Select, options: 'draft, published, archived', default: 'draft', index: true },
 	author: { type: Types.Relationship, ref: 'Y', index: true },
 	publishedDate: { type: Types.Date, index: true, dependsOn: { state: 'published' } },
@@ -31,5 +39,5 @@ Post.schema.virtual('content.full').get(function () {
 	return this.content.extended || this.content.brief;
 });
 
-Post.defaultColumns = 'title, state|20%, author|20%, publishedDate|20%';
+Post.defaultColumns = 'title, weight|20%, state|20%, author|20%, publishedDate|20%';
 Post.register();
