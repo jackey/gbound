@@ -48,6 +48,7 @@ angular.module('myapp').directive('homeBannerAutoHeight', function ($window) {
 			$(element[0]).slick({
 				infinite: true,
 				autoplay: true,
+        dots: true,
         autoplaySpeed: 2*1000
 			});
 		$(element[0]).find('img').css({

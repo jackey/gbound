@@ -96,13 +96,18 @@
 				</div> 
 			</div>
 
-			<div ng-repeat="news in newsItems track by $index" 
-				ng-class="{  'section section-5 mhide clearfix not-visible': true, odd: $index % 2 == 0, even: $index % 2 != 0 }" when-visible="animateElementIn" when-not-visible="animateElementOut">
+			<div
+				ng-class="{  'section section-5 mhide clearfix not-visible': true }" when-visible="animateElementIn" when-not-visible="animateElementOut">
 				<div class="img-con">
 					<div class="h40"></div>
 					<div class="intro-block">
 						<h2 class="font-eng color-dark-yellow">新闻中心<span>News</span></h2>
-						<p><font class="font-bold f18">{{news.title}}</font><br></p><p ng-bind-html="news.content.brief | to_trusted"></p>
+						<p ng-repeat="news in newsItems track by $index">
+							<font ng-if="$index == 0 " class="font-bold f18">{{news.title}}<br></font> 
+							<font ng-if="$index != 0 ">{{news.title}}<br></font>
+						</p>
+						<br>
+
 						<a href="/#!/newslist" class="color-dark-yellow">了解更多 >> </a>
 					</div>
 					<img class="" src="misc/imagesv2/home_banner2.jpg" alt="">
@@ -121,7 +126,7 @@
 				</div>
 			</div>
 
-			<div ng-repeat="news in newsItems track by $index" ng-class="{'section section-7 mshow clearfix not-visible': true, odd: $index % 2 == 0, even: $index % 2 != 0 }" 
+			<div ng-class="{'section section-7 mshow clearfix not-visible': true }" 
 					 when-visible="animateElementIn" when-not-visible="animateElementOut">
 				<div class="wrapper">
 					<div class="hp-4">
@@ -132,7 +137,10 @@
 					<div class="clearfix intro-wrapper">
 						<div class="intro-block right">
 							<h2 class="font-eng color-dark-yellow">新闻中心<span>News</span></h2>
-							<p><font class="font-bold f18">{{news.title}}</font><br></p><p ng-bind-html="news.content.brief | to_trusted"></p>
+							<p ng-repeat="news in newsItems track by $index">
+								<font data-index="{{$index}}" ng-if="$index == 0" class="font-bold f18">{{news.title}}<br></font>
+								<font data-index="{{$index}}" ng-if="$index !=0">{{news.title}}<br></font>
+							</p>
 							<a href="/#!/newslist" class="color-dark-yellow">了解更多 > </a>
 						</div>
 						<img src="misc/imagesv2/m_hp7.jpg" class="left" alt="">
