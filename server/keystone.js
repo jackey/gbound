@@ -9,6 +9,10 @@ var keystone = require('keystone');
 // See http://keystonejs.com/guide/config for available options
 // and documentation.
 
+keystone.set('cloudinary config', { cloud_name: 'dl6nxfpgm', api_key: '316799232354618', api_secret: 'Xo3ioq23rWTK0cUkcrLEcn9Np2c' });
+
+
+
 keystone.init({
 	'name': 'gbfund',
 	'brand': 'gbfund',
