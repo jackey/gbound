@@ -19,15 +19,23 @@ function range(begin, end) {
 	return nums
 }
 
+var storage = new keystone.Storage({
+	adapter: keystone.Storage.Adapters.FS,
+	fs: {
+		path: '/usr/local/var/keystone',
+		publicPath: '/files',
+	}
+});
+
 Post.add({
 	title: { type: String, required: true, },
 	weight: {type: Types.Select, options: range(0, 100).join(','), default: '0', index: true},
 	state: { type: Types.Select, options: 'draft, published, archived', default: 'draft', index: true },
 	author: { type: Types.Relationship, ref: 'Y', index: true },
 	publishedDate: { type: Types.Date, index: true, dependsOn: { state: 'published' } },
-	listImage: { type: Types.CloudinaryImage , note: '1166 x 192', label: 'List Image (1166 x 192)'},
-	bannerImagePC: {type: Types.CloudinaryImage, note: '1164 x 454', label: 'PC Banner Image (1164 x 454)'},
-	bannerImageMobile: {type: Types.CloudinaryImage, note: '640 x 314', label: 'Mobile Banner Image (640 x 314)'},
+	listImage: { type: Types.File, storage: storage, note: '1166 x 192', label: 'List Image (1166 x 192)'},
+	bannerImagePC: {type: Types.File, storage: storage, note: '1164 x 454', label: 'PC Banner Image (1164 x 454)'},
+	bannerImageMobile: {type: Types.File, storage: storage, note: '640 x 314', label: 'Mobile Banner Image (640 x 314)'},
 	content: {
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 		extended: { type: Types.Html, wysiwyg: true, height: 400 },
