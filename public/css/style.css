@@ -3174,3 +3174,18 @@ Copyright (c) 2015 Daniel Eden
 .slick-dots li.slick-active button:before {
   opacity: .75;
   color: black; }
+
+.intro-block p a {
+  display: inline-block;
+  position: static;
+  height: 33px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  color: #f1f1f1; }
+
+.intro-block p a:hover {
+  position: static;
+  font-size: 18px;
+  color: #fff; }
