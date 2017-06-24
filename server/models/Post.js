@@ -26,8 +26,7 @@ var storage = new keystone.Storage({
 		url: true
 	},
 	fs: {
-		path: '/usr/local/var/keystone',
-		publicPath: '/files',
+		path: './uploads',
 	}
 });
 

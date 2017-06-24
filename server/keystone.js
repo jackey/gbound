@@ -16,7 +16,7 @@ keystone.init({
 	'brand': 'gbfund',
 
 	'sass': 'public',
-	'static': 'public',
+	'static': ['public', 'uploads'],
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'pug',
