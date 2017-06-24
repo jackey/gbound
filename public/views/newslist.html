@@ -14,7 +14,7 @@
             <div class="wrapper clearfix">
                 <div class="desc">
                     <a ng-repeat="news in newsItems" href="/#!/news/{{news._id}}" class="mhide">
-                        <img src="{{news.listImage.url}}" old-src="/misc/imagesv2/news_list01.jpg" alt="">
+                        <img src="/backend/{{news.listImage.filename}}" old-src="/misc/imagesv2/news_list01.jpg" alt="">
                         <div class="desc-inner">
                             <h4 ng-bind-html="news.title | to_trusted">{</h4>
                             <p ng-bind-html="news.content.brief | to_trusted"></p>
@@ -23,7 +23,7 @@
                     </a>
                     
                     <a ng-repeat="news in newsItems" href="/#!/news/{{news._id}}" class="read-more mshow">
-                        <img src="{{news.listImage.url}}" alt="">
+                        <img src="/backend/{{news.listImage.filename}}" alt="">
                         <div class="desc-inner">
                             <h4 ng-bind-html="news.title | to_trusted"></h4>
                         </div>

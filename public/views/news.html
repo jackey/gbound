@@ -1,8 +1,8 @@
 <div class="news">
     <div class="wrapper">
         <div class="banner banner-news wrapper">
-            <img ng-src="{{news.bannerImagePC.url}}" alt="" class="w100 mhide">
-            <img ng-src="{{news.bannerImageMobile.url}}" alt="" class="w100 mshow">
+            <img ng-src="/backend/{{news.bannerImagePC.filename}}" alt="" class="w100 mhide">
+            <img ng-src="/backend/{{news.bannerImageMobile.filename}}" alt="" class="w100 mshow">
         </div>
 
         <div class="content-news" ng-bind-html="news.content.extended | to_trusted"></div>
