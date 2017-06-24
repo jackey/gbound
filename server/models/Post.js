@@ -21,6 +21,10 @@ function range(begin, end) {
 
 var storage = new keystone.Storage({
 	adapter: keystone.Storage.Adapters.FS,
+	schema: {
+		originalname: true,
+		url: true
+	},
 	fs: {
 		path: '/usr/local/var/keystone',
 		publicPath: '/files',
