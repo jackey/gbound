@@ -574,6 +574,11 @@
   .content-newslist .desc a.mshow {
     display: block;
   }
+
+  .intro-block p a {
+    padding: 0px;
+    margin: 0px;
+  }
 }
 
 
