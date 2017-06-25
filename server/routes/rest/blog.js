@@ -14,7 +14,7 @@ exports = module.exports = function (req, res) {
     page: 1,
     perPage: num,
   })
-  .select('title listImage _id')
+  .select('title listImage _id content.brief')
   .where('state', 'published')
   .sort('-weight');
 
