@@ -3192,7 +3192,19 @@ Copyright (c) 2015 Daniel Eden
   font-size: 15px; }
 
 .intro-block p.news-list-item {
-  line-height: 150%; }
+  line-height: 150%;
+  width: 100%;
+  position: relative; }
+
+.intro-block p.news-list-item:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: -10px;
+  border-radius: 50%;
+  background: #e6e6e6;
+  top: 5px; }
 
 .intro-block p.news-list-item:nth-child(2) {
   margin-top: 10px;
