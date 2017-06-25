@@ -33,7 +33,7 @@ var storage = new keystone.Storage({
 
 Post.add({
 	title: { type: String, required: true, },
-	weight: {type: Types.Select, options: range(0, 100).join(','), default: '0', index: true},
+	weight: {type: Number, default: 0, index: true},
 	state: { type: Types.Select, options: 'draft, published, archived', default: 'draft', index: true },
 	author: { type: Types.Relationship, ref: 'Y', index: true },
 	publishedDate: { type: Types.Date, index: true, dependsOn: { state: 'published' } },
