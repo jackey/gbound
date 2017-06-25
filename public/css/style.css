@@ -525,6 +525,9 @@ a.color4:hover {
   width: 876px;
   margin: 0 auto;
   padding: 25px 0px 0px 35px;
+  text-align: left; }
+
+.content-news img {
   text-align: center; }
 
 .cards ul {
