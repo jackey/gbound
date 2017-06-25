@@ -33,7 +33,16 @@ var storage = new keystone.Storage({
 
 File.add({
   title: { type: String, required: true, },
-  file: { type: Types.File, storage: storage, many: true },
+  file1: { type: Types.File, storage: storage},
+  file2: { type: Types.File, storage: storage},
+  file3: { type: Types.File, storage: storage},
+  file4: { type: Types.File, storage: storage},
+  file5: { type: Types.File, storage: storage},
+  file6: { type: Types.File, storage: storage},
+  file7: { type: Types.File, storage: storage},
+  file8: { type: Types.File, storage: storage},
+  file9: { type: Types.File, storage: storage},
+  file10: { type: Types.File, storage: storage},
 });
 
 File.register();
