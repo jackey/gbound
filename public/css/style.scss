@@ -4364,11 +4364,11 @@ Copyright (c) 2015 Daniel Eden
 .intro-block p a {
     display: inline-block;
     position: static;
-    height: 2rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 100%;
+    line-height: 100%;
     color: #f1f1f1;
     font-size: 15px;
 }
@@ -4380,10 +4380,10 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .intro-block p.news-list-item {
-    line-height: 100%;
+    line-height: 150%;
 }
 
 .intro-block p.news-list-item:nth-child(2) {
-    margin-top: 5px;
+    margin-top: 10px;
     display: inline-block;
 }
