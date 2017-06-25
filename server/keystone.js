@@ -24,6 +24,7 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'Y',
+	'wysiwyg images': true,
 	'wysiwyg additional plugins': 'paste',
 	'wysiwyg additional options': {
 		'paste_data_images': true
