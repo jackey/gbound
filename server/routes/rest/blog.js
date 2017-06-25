@@ -13,11 +13,9 @@ exports = module.exports = function (req, res) {
   var q = keystone.list('Post').paginate({
     page: 1,
     perPage: num,
-    filters: {
-      state: 'published'
-    },
   })
-  .sort('+weight');
+  .where('state', 'published')
+  .sort('-weight');
 
   q.exec(function(err, results) {
     if (err) {
@@ -28,6 +26,7 @@ exports = module.exports = function (req, res) {
     } else {
       var items = [];
       results.results.forEach(function (item) {
+        console.log(item.weight);
         // var img = item.image.url;
         // var parts = img.split('/');
         // parts[parts.length - 2] = 'c_fill,e_sharpen:200,g_faces,h_192,w_1166';
