@@ -580,6 +580,11 @@
     margin: 0px;
     font-size: 1.2rem;
   }
+
+  .slick-dots li button {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 
