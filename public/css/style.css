@@ -3212,3 +3212,25 @@ Copyright (c) 2015 Daniel Eden
 .intro-block p.news-list-item:nth-child(2) {
   margin-top: 10px;
   display: inline-block; }
+
+.news-body h1 {
+  width: 876px;
+  text-align: center;
+  margin: 0 auto; }
+
+.pager a {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #afafaf;
+  width: 60px;
+  display: inline-block;
+  color: #7b7b7b;
+  cursor: pointer; }
+  .pager a:hover {
+    color: #000;
+    text-decoration: none; }
+
+.pager .next {
+  float: right; }
+
+.pager .prev {
+  float: left; }

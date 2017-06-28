@@ -585,6 +585,14 @@
     width: 15px;
     height: 15px;
   }
+  
+  .news-body h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+  }
+
 }
 
 
@@ -606,6 +614,8 @@
 		font-size: 12px;
 	}
 }
+
+
 
 
 
