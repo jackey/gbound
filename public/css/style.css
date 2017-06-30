@@ -508,7 +508,8 @@ a.color4:hover {
   text-align: center; }
 
 .banner-news {
-  position: relative; }
+  position: relative;
+  margin-bottom: 2rem; }
 
 .banner-news .w-wrapper {
   background: #e0b253;
