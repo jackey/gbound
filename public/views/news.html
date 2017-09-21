@@ -4,7 +4,7 @@
             <img ng-src="/misc/imagesv2/news_detail.jpg" alt="" class="w100 mhide">
             <img ng-src="/misc/imagesv2/mnews_detail.jpg" alt="" class="w100 mshow">
         </div>
-        <h1>{{news.title}}</h1>
+        <h1 ng-bind-html="news.title | to_trusted"></h1>
         <div class="content-news" ng-bind-html="news.content.extended | to_trusted"></div>
         <div class="pager clear">
           <div class="prev"><a ng-if="news.prev != null" ng-href="#!/news/{{news.prev}}">上一篇</a></div>
