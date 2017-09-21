@@ -527,9 +527,11 @@ a.color4:hover {
   margin: 0 auto;
   padding: 25px 0px 0px 35px;
   text-align: left; }
-  .content-news p img {
-    margin: 0 auto;
-    display: block; }
+  .content-news p {
+    text-indent: 1rem; }
+    .content-news p img {
+      margin: 0 auto;
+      display: block; }
 
 .content-news img {
   text-align: center; }
